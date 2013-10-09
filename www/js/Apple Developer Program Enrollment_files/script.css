@@ -1,0 +1,10 @@
+.script { display:block; }
+.noscript { display:none; }
+
+/* expand/collapse swapper **/
+#main .expandlabel { padding-left:1.2em; cursor:pointer; color:#366088; background:url( http://devimages.apple.com/global/elements/arrows/expand.gif ) no-repeat 0 -126px; }
+#main .expandlabel:hover { text-decoration:underline; }
+#main .expandlabel.closed { background-position:0 3px; }
+
+#main div.expandcontent { display:none; overflow:hidden; padding-left:1.2em; }
+.hasjs #main div.expandcontent { display:block; }

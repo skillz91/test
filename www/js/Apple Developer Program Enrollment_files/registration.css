@@ -1,0 +1,1004 @@
+/* global styles */
+body { background-color:#f2f2f2; }
+#globalheader { position:relative; width:980px; margin:20px auto 0 !important; z-index:999; _zoom:1; }
+#globalheader h1 { display:inline; }
+#globalheader h1 a { position:absolute; top:1px; left:7px; width:213px; height:27px; text-indent:-9999px; outline:none; -moz-outline:none; background:url(https://devimages.apple.com.edgekey.net/assets/elements/header/developer.png) no-repeat 0 0; }
+#globalheader h2 {font-size:14px; float:right; position:relative; top:3px; right:15px; }
+#globalfooter p.sosumi { text-align:center; color:#76797C; }
+#globalfooter a { color:#0088CC; margin:0.75em;}
+
+.left { float:left; }
+.right { float:right; }
+.clear { clear:both; }
+
+/* main caps */
+#main { z-index:1; width:982px; margin:0; background:url(https://devimages.apple.com.edgekey.net/assets/elements/layout/main_bodybg.png); }
+#man:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.cap.top { position:absolute; z-index:2; top:0; height:4px; font-size:1px; width:100%; background:url(https://devimages.apple.com.edgekey.net/assets/elements/layout/maincap_top.png) no-repeat; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+.cap.bottom { position:absolute; z-index:2; bottom:0; _bottom:-2px; height:7px; font-size:1px; width:100%; background:url(https://devimages.apple.com.edgekey.net/assets/elements/layout/maincap_bottom.png) no-repeat; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#main #content { padding:25px 40px; min-height:370px; _height:370px; }
+
+/* headings */
+h1 { margin:0 0 1.5em; color:#000; }
+h2, h3, h4, h5 { color:#000; font-weight:600 !important; }
+
+/* forms */
+#main #content input { margin:2px 6px 0 0; vertical-align:top; }
+#main #content form h1 { margin-bottom:0 !important; }
+#main #content form label { display:block; clear:both; float:left; width:125px; }
+#main #content form label b { display:block; font-weight:normal; font-size:11px; color:#999; margin-bottom:1em; }
+#main #content form input.text  { width:370px; }
+#main #content form select  { width:373px; }
+#main #content form select.half  { width:180px; margin-right:10px; }
+#main #content form div.input { clear:both; margin-bottom:2em; }
+#main #content form div.input.multiple input { margin:0.5em 0 0 125px; _margin-left:128px; }
+#main #content form div.input.multiple input.first { margin:0; width:370px; }
+#main #content form div.input span { display:block; margin-left:125px; font-size:11px; }
+#main #content form .forminfo { color:#999; }
+#main #content form .error { font-weight:bold !important; color:#a60202 !important; }
+#main #content form #phone_cc { width:34px; }
+#main #content form #phone_area { width:48px; }
+#main #content form #phone2 { width:115px; }
+#main #content form #phone_ext { width:48px; }
+
+/* links */
+a { text-decoration:none !important; }
+a:hover { text-decoration:underline !important; }
+
+/* buttons */
+.nav { position:relative; clear:both; margin-top:1em; padding:15px 0 0; width:100%; border-top:1px solid #ccc; }
+.nav #back  { margin-right:15px; }
+
+a.button,
+div.button { display:inline; padding:4px 0 6px; font-size:12px; text-align:center; background:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_right.png) no-repeat 100% 50%; zoom:1; *padding:0; text-decoration:none; }
+a.button span,
+div.button input { display:inline; padding:4px 18px 6px; color:#333; text-shadow:#e7e6e6 0 -1px -1px; font-size:1em; border:none; background:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_left.png) no-repeat 0 50%; zoom:1; }
+div.button input { padding-right:18px; padding-left:18px;  }
+div.button input, x:-moz-any-link, x:default { padding-right:15px; padding-left:15px; } /* for firefox */
+div.button input { *padding-right:6px; *padding-left:6px; } /* for ie's */
+a.button:hover { text-decoration:none !important; }
+a.button:hover span,
+div.button:hover input { color:#000; cursor:pointer; text-decoration:none !important; }
+
+a.button.disabled,
+div.button.disabled { opacity:.5; filter:alpha(opacity=50); -ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); }
+a.button.disabled:hover span,
+div.button.disabled:hover input { color:#333; cursor:default; }
+
+a.button.blue,
+div.button.blue { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_blue_right.png); }
+div.button.blue { *padding-top:4px; }
+a.button.blue span,
+div.button.blue input { color:#fff; text-shadow:#324e69 -1px -1px 0; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_blue_left.png); }
+div.button.blue input { margin:0 !important; margin-top:-4px !important; *margin-top:-4px !important; *padding-top:5px; vertical-align:inherit !important; *vertical-align:baseline !important; }
+a.button.blue:hover span,
+div.button.blue:hover input { color:#e6e6e6; text-decoration:none !important; }
+
+a.button.disabled.blue:hover span,
+div.button.disabled.blue:hover input { color:#fff; }
+
+form a.button,
+form div.button { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_form_right.png); }
+form a.button span,
+form div.button input { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_form_left_4x22.png); }
+
+form a.button.blue,
+form div.button.blue { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_form_blue_right.png); }
+form a.button.blue span,
+form div.button.blue input { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_form_blue_left_4x22.png); }
+
+
+/* Topbar ----------------------------------------------------------------------------------------------------------------------- */
+.topbar { position:relative; z-index:1; height:36px; padding:9px 16px 0; border-radius:4px 4px 0 0; -webkit-border-radius:4px 4px 0 0; -moz-border-radius:4px 4px 0 0; -o-border-radius:4px 4px 0 0; -khtml-border-radius:4px 4px 0 0; border-bottom:1px solid #aaa;
+	background-image: -webkit-linear-gradient(top, #fff, #e8e8e8); 
+    background-image:    -moz-linear-gradient(top, #fff, #e8e8e8);
+    background-image:         linear-gradient(top, #fff, #e8e8e8);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e8e8e8')
+ }
+.topbar h1 a { color:#666; font-weight:normal; font-size:18px; line-height:28px; text-shadow:1px 1px #fff; }
+.topbar h1 a:hover { text-decoration:none !important; color:#08c; }
+.topbar .topbar-user { position:absolute; z-index:2; top:17px; right:20px; font-size:11px; font-weight:bold; line-height:13px; text-align:right; }
+.topbar .topbar-user a,
+.topbar .topbar-user span { color:#666; display:block; float:right; }
+.topbar .topbar-user a:hover { color:#08c; }
+.topbar .topbar-user a.user { padding-right:8px; width:240px; }
+.topbar .topbar-user a.sign-out { padding-left:8px; white-space:nowrap; }
+
+
+/* progress bar */
+#main #content #bartmap {position:relative; z-index:0;height:82px; width:950px; margin:0 -38px 2em; padding-left:30px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/bartmapbg.png) repeat-x; }
+#main #content #bartmap:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content #bartmap h2 { float:left; width:325px; margin:0; }
+#main #content #bartmap .progress { position:absolute; display:block; z-index:1; height:5px; margin:19px 0 -4px 70px; padding:0; _line-height:4px; _font-size:1px; background-color:#257c50; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progressbg.gif) repeat-x; }
+#main #content #bartmap .progress_bar { position:absolute; display:block; z-index:0; margin:0 70px -4px 70px; height:4px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progressbarbg.gif) repeat-x; }
+#main #content #bartmap ul { position:relative; *z-index:2; margin-bottom:0; padding-top:20px; zoom:1; }
+#main #content #bartmap ul li { position:relative; display:block; float:left; z-index:2; padding-top:15px; margin-top:-4px; text-align:center; font-size:11px; color:#999; background:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_columnbg.gif) no-repeat 50% 0; }
+#main #content #bartmap ul li.last { /*float:right !important; _margin-right:5px;*/ }
+
+
+/* 4 steps */
+#main #content #bartmap.steps4 .progress { top:0; }
+#main #content #bartmap.steps4 .progress_bar { margin:20px 70px -4px; left:70px; width:650px; }
+#main #content #bartmap.steps4 ul li { width:217px; }
+#main #content #bartmap.steps4 ul li.last { _margin-right:15px; }
+
+/* 5 steps */
+#main #content #bartmap.steps5 { /*width:904px; margin:2em -11px;*/ }
+#main #content #bartmap.steps5 .progress_bar { margin:20px 85px -4px 85px; width:685px; }
+#main #content #bartmap.steps5 ul li { width:172px; }
+
+/* 6 steps */
+#main #content #bartmap.steps6 { /*width:904px; margin:2em -11px;*/ }
+#main #content #bartmap.steps6 .progress_bar { margin:20px 70px -4px 70px; width:759px; }
+#main #content #bartmap.steps6 ul li { width:150px; }
+
+/* Edu bartmap */
+#main #content #edubartmap {position:relative; z-index:0;height:82px; width:950px; margin:0 -38px 2em; padding-left:30px;  padding-top:20px; background:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/bartmapbg.png ) repeat-x; }
+#main #content #edubartmap:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content #edubartmap h2 { float:left; width:360px; margin:-9px 0 0; font-size:14px; }
+#main #content #edubartmap .progress { position:absolute; display:block; z-index:1; height:4px; margin:0 0 -4px 70px; padding:0; _line-height:4px; _font-size:1px; background-color:#257c50; top:20px; left:450px; }
+#main #content #edubartmap .progress_bar { position:absolute; display:block; z-index:0; margin:0 70px -4px 70px; height:4px; top:20px; left:450px; width:400px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progressbarbg.gif) repeat-x; }
+#main #content #edubartmap ul {  position:relative; margin:0; zoom:1; float:right; width:523px; _width:523px; }
+#main #content #edubartmap ul li { position:relative; display:block; float:left; z-index:2;  width:130px;  padding-top:15px; margin-top:-4px; text-align:center; font-size:11px; color:#999; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_columnbg.gif) no-repeat 50% 0; }
+#main #content #edubartmap ul li.last { float:right !important; _margin-right:5px; }
+
+/* Enterprise bartmap */
+#main #content #inhousebartmap {position:relative; z-index:0;height:82px; width:950px; margin:0 -38px 2em; padding-left:30px; background:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/bartmapbg.png ) repeat-x; }
+#main #content #inhousebartmap:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content #inhousebartmap h2 { float:left; width:325px; margin:0; }
+#main #content #inhousebartmap .progress { position:absolute; display:block; z-index:1; height:5px; margin:20px 80px -4px; padding:0; _line-height:4px; _font-size:1px; background-color:#257c50; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progressbg.gif) repeat-x; }
+#main #content #inhousebartmap .progress_bar { width:750px;  position:absolute; display:block; z-index:0; margin:20px 80px -4px 80px;  height:4px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progressbarbg.gif) repeat-x; }
+#main #content #inhousebartmap ul { position:relative; margin-bottom:0; padding-top:20px; zoom:1; }
+#main #content #inhousebartmap ul li { width:152px; position:relative; display:block; float:left; z-index:2; padding-top:15px; margin-top:-4px; text-align:center; font-size:11px; color:#999; background:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_columnbg.gif ) no-repeat 50% 0; }
+#main #content #inhousebartmap ul li.last { /*float:right !important; _margin-right:5px;*/ }
+
+/* Migration bartmap */	
+#main #content #migbartmap { position:relative; clear:both; z-index:0; height:50px; margin-bottom:2em; border-bottom:1px solid #ccc; }
+#main #content #migbartmap:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content #migbartmap h2 { float:left; width:360px; margin:-9px 0 0; }
+#main #content #migbartmap .progress { position:absolute; display:block; z-index:1; height:4px; margin:0 0 -4px 40px; padding:0; _line-height:4px; _font-size:1px; background-color:#257c50; top:0; left:320px; }
+#main #content #migbartmap .progress_bar { position:absolute; display:block; z-index:0; margin:0 40px -4px 40px; height:4px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progressbarbg.gif) repeat-x; top:0; left:320px; width:485px; }
+#main #content #migbartmap ul {  position:relative; margin:0; zoom:1; float:right; width:600px; _width:600px; }
+#main #content #migbartmap ul li { position:relative; display:block; float:left; z-index:2;  width:120px;  padding-top:15px; margin-top:-4px; text-align:center; font-size:11px; color:#999; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_columnbg.gif) no-repeat 50% 0; }
+#main #content #migbartmap ul li.last { float:right !important; _margin-right:5px; }
+
+/* Renewal bartmap */
+#main #content #renewbartmap { position:relative; clear:both; z-index:0; height:50px; margin-bottom:2em; border-bottom:1px solid #ccc; }
+#main #content #renewbartmap:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content #renewbartmap h2 { float:left; width:360px; margin:0; font-size:16px; }
+#main #content #renewbartmap .progress { position:absolute; display:block; z-index:1; height:4px; margin:0 0 -4px 70px; padding:0; _line-height:4px; _font-size:1px; background-color:#257c50; top:0; left:390px; }
+#main #content #renewbartmap .progress_bar { position:absolute; display:block; z-index:0; margin:0 70px -4px 70px; height:4px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progressbarbg.gif) repeat-x; top:0; left:390px; width:392px; }
+#main #content #renewbartmap ul {  position:relative; margin:0 -20px 0 0; zoom:1; float:right; width:523px; _width:513px; }
+#main #content #renewbartmap ul li { position:relative; display:block; float:left; z-index:2; padding-top:15px; margin-top:-4px; text-align:center; font-size:11px; color:#999; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_columnbg.gif) no-repeat 50% 0; }
+#main #content #renewbartmap ul li.last { float:right !important; _margin-right:5px; }
+
+#main #content #renewbartmap.steps3 ul li#bartmap1 { width:130px; }
+#main #content #renewbartmap.steps3 ul li#bartmap2 { width:262px; }
+#main #content #renewbartmap.steps3 ul li#bartmap3 { width:130px; }
+
+/* Safari individual bartmap */	
+#main #content #individualsafaribartmap { position:relative; clear:both; z-index:0; height:50px; margin-bottom:2em; border-bottom:1px solid #ccc; }
+#main #content #individualsafaribartmap:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content #individualsafaribartmap h2 { float:left; width:360px; margin:0; font-size:16px; }
+#main #content #individualsafaribartmap .progress { position:absolute; display:block; z-index:1; height:4px; margin:0 0 -4px 70px; padding:0; _line-height:4px; _font-size:1px; background-color:#257c50; top:0; left:390px; }
+#main #content #individualsafaribartmap .progress_bar { position:absolute; display:block; z-index:0; margin:0 70px -4px 70px; height:4px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progressbarbg.gif) repeat-x; top:0; left:390px; width:392px; }
+#main #content #individualsafaribartmap ul {  position:relative; margin:0 -20px 0 0; zoom:1; float:right; width:523px; _width:513px; }
+#main #content #individualsafaribartmap ul li { position:relative; display:block; float:left; z-index:2; width:130px; padding-top:15px; margin-top:-4px; text-align:center; font-size:11px; color:#999; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_columnbg.gif) no-repeat 50% 0; }
+#main #content #individualsafaribartmap ul li.last { float:right !important; _margin-right:5px; }
+
+/* sidebox */
+#main #content .sidebox { position:relative; width:402px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/sidebox_bg.png) repeat; zoom:1; }
+#main #content .sidebox:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content .sidebox .cap.top { position:absolute; top:0; left:0; width:402px; height:8px; font-size:1px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/sidebox_top.png) no-repeat; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#main #content .sidebox .cap.bottom { position:absolute; bottom:0; _bottom:-2px; left:0; width:402px; height:9px; font-size:1px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/sidebox_bottom.png) no-repeat; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#main #content .sidebox .sb { margin:15px 4px 0 3px; padding:0 20px 1em; zoom:1; }
+#main #content .sidebox .sb:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content .sidebox .sb h2 { position:relative; display:block; padding:0.6em 20px; margin:0 -20px 1em; font-weight:normal !important; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/sidebox_sb.gif) top repeat-x; }
+#main #content .sidebox .sb p { clear:both; padding:1em 0 0; font-size:11px; line-height:1.3; }
+#main #content .sidebox .sb input#activate { float:left; width:200px; }
+#main #content .sidebox .sb .blue.button { }
+
+/* error message classes */
+#main #content .msg { position:relative; clear:both; margin:1em 0; padding:1em 1em 1em 55px; vertical-align:middle; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; }
+#main #content .msg h2 { margin-bottom:0.4em; font-size:14px; }
+#main #content .msg p { margin:0 0 6px; }
+#main #content .msg.info, #main #content .msg.announcement, #main #content .msg.error, #main #content .msg.warning, 
+#main #content .msg.ywarning, #main #content .msg.confirmed { border:1px solid #ddd; padding:25px 25px 19px 80px; min-height:48px; }
+#main #content .msg.info { background:#f6f6f6 url( https://devimages.apple.com.edgekey.net/assets/elements/icons/48x48/icon_info.png ) no-repeat 20px 23px; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#main #content .msg.announcement { background:#f6f6f6 url( https://devimages.apple.com.edgekey.net/assets/elements/icons/48x48/alert_announcement.png ) no-repeat 20px 25px; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#main #content .msg.error {  background:#f6f6f6 url( https://devimages.apple.com.edgekey.net/assets/elements/icons/48x48/alert_stop.png ) no-repeat 20px 25px; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#main #content .msg.warning { background:#f6f6f6 url( https://devimages.apple.com.edgekey.net/assets/elements/icons/48x48/alert_warning.png ) no-repeat 20px 25px; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#main #content .msg.ywarning { border:1px solid #edca68;  background:#fcfad3 url( https://devimages.apple.com.edgekey.net/assets/elements/icons/48x48/alert_warning.png ) no-repeat 20px 25px; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#main #content .msg.confirmed { background:#f6f6f6 url( https://devimages.apple.com.edgekey.net/assets/elements/icons/48x48/alert_confirm.png ) no-repeat 20px 25px; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+
+/* misc classes */
+#main #content .bigwarning {  margin:1em 0; padding:25px 75px 1em 105px; border:1px solid #ddd; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; }
+#main #content .bigwarning img.left { margin-left:-82px; }
+#main #content .section { clear:both; padding-bottom:2em; margin-bottom:2em; border-bottom:1px solid #ccc; zoom:1; }
+#main #content .section:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content .message h2 { padding-left:50px; margin-bottom:1em; font-size:14px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/importantbigbg.gif) 0 3px no-repeat; }
+#main #content .message h3 { padding-left:20px; margin:0; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/importantbg.gif) 0 0 no-repeat; *background }
+#main #content .message p { padding-left:20px; margin:0; font-size:11px; line-height:1.3; }
+#main #content .terms { border:1px solid #CCCCCC; height:174px; overflow:auto; padding:1em 20px; margin-bottom:1em; }
+#main #content div.right { float:right; }
+#main #content div.left { float:left; }
+#main #content h2.bordered { padding-bottom:1em; border-bottom:1px solid #ddd; }
+
+#main #content .pt11 { font-size:11px; }
+#main #content .lh22 { margin:2px 0 8px; line-height:22px !important; }
+#main #content p.note { padding-left:24px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/notebg.png) left top no-repeat; }
+#main #content p.note, #main #content p.sosumi { font-size:11px; line-height:1.4; }
+#main #content p.headertext { font-size:18px; margin-bottom:1em; font-weight:normal; color:#000; }
+#main #content ul.checked { clear:both; padding:2em 0; margin-bottom:2em; border-bottom:1px solid #ccc; zoom:1; }
+#main #content ul.checked:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#main #content ul.checked li { clear:both; width:90%; padding-left: 32px; margin-bottom:3em; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/renew_check.gif) 0 0 no-repeat; }
+#main #content ul.checked li h2 { margin-bottom:0.2em; }
+#main #content ul.checked li p { margin-bottom:0; }
+#main #content ul.checked li img.right { margin-top:0; }
+#main #content .callout { border:1px solid #DDDDDD; background-color:#f9f9f9; margin:1em 0; *padding-top:30px;  vertical-align:middle; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; }
+
+/* overlays */
+.overlaybox { position:relative; }
+.overlayhtmllink { outline:none; }
+.overlayhtmllink:hover { cursor:pointer; }
+.overlaydescription { position:absolute; bottom:12px; z-index:2; display:block; width:320px; height:175px; padding:4px 8px 15px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/overlay_bg.png) no-repeat; }
+.overlaydescription .closelink { position:relative; float:right; margin:-24px 5px 0; cursor:pointer; }
+.overlaydescription img { margin:0 !important; }
+
+/* page specific */
+body.appleID #main #content h2 { margin-bottom:0; }
+body.appleID #main #content #bartmap ul li#bartmap1 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.png); }
+body.appleID #main #content #bartmap .progress { width:0; }
+body.appleID #main #content .grid2colb label { font-weight:bold; color:#000; }
+body.appleID #main #content .grid2colb .column.first p { margin:0 0 30px 24px; }
+body.appleID #main.idp_uni #content .grid2colb .column.first p { margin:0 0 50px 24px; }
+body.appleID #main.idp_ent #content .grid2colb .column.first p { margin:0 0 50px 24px; }
+body.appleID #main.idp_it #content .grid2colb .column.first p { margin:0 0 50px 24px; }
+body.appleID #main #content .grid2colb .important h3, body.appleID #main #content .grid2colb .important p { margin:0 !important; }
+body.appleID #main #content .grid2colb h1 { margin:55px 0 40px; }
+body.appleID #main #content .grid2colb .column.first { width:582px; }
+body.appleID #main #content .grid2colb .column.last { width:240px; }
+body.appleID #main #content .grid2colb .column.first .note { background:none; padding:0; font-size:11px; width:552px; }
+body.appleID #main #content .grid2colb .column.first .note.univ { margin-top:-45px; }
+body.appleID #main #content .grid2colb .message h3 { font-size:11px; }
+body.appleID #main #content .nav { margin-top:2em !important; }
+body.appleID #main.idp_uni #content .nav { margin-top:1em !important; }
+body.appleID a.button { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_form_right.png) !important; }
+body.appleID a.button span { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_form_left_4x22.png) !important; }
+body.appleID a.button.blue { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_form_blue_right.png) !important; }
+body.appleID a.button.blue span { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_form_blue_left_4x22.png) !important; }
+body.appleID #main.iphone_or_mac #content .grid2cola { margin-bottom:55px; }
+body.appleID #main.iphone_or_mac #content .grid2cola .column.first,
+body.appleID #main.iphone_or_mac #content .grid2cola .column.last { width:49% !important; width:345px; }
+body.appleID #main.iphone_or_mac #content .grid2cola .column.last { border-left:1px solid #ccc; }
+body.appleID #main.iphone_or_mac #content .grid2cola .column.last .inner-container { margin-left:60px; }
+body.appleID #main.iphone_or_mac #content .grid2cola .column.first .inner-container input,
+body.appleID #main.iphone_or_mac #content .grid2cola .column.last .inner-container input { width:20px; margin-top:12px; }
+body.appleID #main.iphone_or_mac #content .grid2cola .column.last .inner-container input.last { margin-top:20px; }
+body.appleID #main.iphone_or_mac #content .grid2cola .column.first .inner-container p,
+body.appleID #main.iphone_or_mac #content .grid2cola .column.last .inner-container p { width:330px; }
+body.appleID #main.iphone_or_mac #content .grid2cola .column ul li { margin-top:22px; }
+body.appleID #main.iphone_or_mac #content .grid2cola .list-items a { font-size:11px; }
+body.appleID #main.iphone_or_mac #content .grid2cola .list-items ul { margin-bottom:0; }
+body.appleID #main.iphone_or_mac #content h1 { padding:30px 0; }
+body.appleID #main.iphone_or_mac #content p.note { background:none; font-size:11px; padding:0 0 12px 0; width:860px;}
+
+body.start #main.idp_uni { width:982px !important; }
+body.start #main.idp_uni #content-wrapper { background-position:center 420px !important; }
+body.start #main.idp_uni #content h1.enroll { background-image:url(https://devimages.apple.com.edgekey.net/programs/start/images/ios-university-enroll.png) !important; }
+body.start #main.idp_uni #content .grid2cola { margin-bottom:45px; }
+body.start #main.idp_uni #content .grid2cola .column.first span { display:block; width:500px; }
+body.start #main.idp_uni #content .grid2cola .column.first h3 { padding-bottom:20px; font-size:14px; }
+body.start #main.idp_uni #content .grid2cola .column p { background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/check.gif) no-repeat; padding-left:18px; padding-bottom:30px; }
+body.start #main.idp_uni #content .grid2cola .column .img-box { margin-right:15px; margin-top:-30px; }
+
+body.start #main.idp_ent { width:982px !important; }
+body.start #main.idp_ent #content-wrapper { background-position:center 420px !important; }
+body.start #main.idp_ent #content h1.enroll { background-image:url(https://devimages.apple.com.edgekey.net/programs/start/images/ios-enterprise-enroll.png) !important; }
+body.start #main.idp_ent #content .grid2cola .column.first p span { display:block; width:500px; }
+body.start #main.idp_ent #content .grid2cola .column.first p.last span { width:550px; }
+body.start #main.idp_ent #content .grid2cola .column.first h3 { padding-bottom:20px; font-size:14px; }
+body.start #main.idp_ent #content .grid2cola .column.first { margin-bottom:22px; }
+body.start #main.idp_ent #content .grid2cola .column p { background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/check.gif) no-repeat; padding-left:18px; padding-bottom:22px; }
+body.start #main.idp_ent #content .grid2cola .column .img-box { margin-top:-68px; }
+
+body.start #main.idp_it { width:982px !important; }
+body.start #main.idp_it #content-wrapper { background-position:center 420px !important; }
+body.start #main.idp_it #content h1.enroll { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/enroll_title_idp_it.gif) !important; }
+body.start #main.idp_it #content .grid2cola .column.first p span { display:block; width:500px; }
+body.start #main.idp_it #content .grid2cola .column.first p.last span { width:550px; }
+body.start #main.idp_it #content .grid2cola .column.first h3 { padding-bottom:20px; font-size:14px; }
+body.start #main.idp_it #content .grid2cola .column.first { margin-bottom:22px; }
+body.start #main.idp_it #content .grid2cola .column p { background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/check.gif) no-repeat; padding-left:18px; padding-bottom:22px; }
+body.start #main.idp_it #content .grid2cola .column .img-box { margin-top:-68px; margin-right:-37px; }
+
+body.start #main.join_team #content h1.enroll { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/enroll_title_join-20111026.gif) !important; }
+body.start #main.join_team #content .grid2cola form { position:absolute; top:100px; }
+body.start #main.join_team #content .grid2cola .column.last { width:419px; min-height:150px; padding-left:35px; border-left: 1px solid #CCC; }
+body.start #main.join_team #content .grid2cola .column.first { width:420px; padding-right:35px; }
+body.start #main.join_team #content .grid2cola { position:inherit; margin-bottom:35px; }
+body.start #main.join_team #content { min-height:100px; }
+
+body.start #main.rad { width:982px !important; }
+body.start #main.rad #content-wrapper { background-position:center 335px !important; }
+body.start #main.rad #content h1.enroll { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/enroll_title_rad.gif) !important; margin-bottom:32px !important;}
+body.start #main.rad #content .grid2cola { margin-bottom:15px; }
+body.start #main.rad #content .grid2cola .column.first { width:440px; }
+body.start #main.rad #content .grid2cola .column.last { width:45%; }
+body.start #main.rad #content .grid2cola .column.first h3 { padding-bottom:20px; font-size:14px; }
+body.start #main.rad #content .grid2cola .column p { padding-bottom:18px; font-size:14px; }
+body.start #main.rad #content .grid2cola .column p.lower { font-size:12px; padding-bottom:0; }
+body.start #main.rad #content .grid2cola .column .img-box { margin-top:-25px; }
+
+body.selectProgram .sidebarDivider { margin:19px -18px 0; background:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/purchaseprogram_sidebarbg.png ) repeat-x;}
+body.selectProgram .sidebarDivider .button { margin-left:6px; *width:60px;}
+body.selectProgram .sidebarDivider .button.blue { *width:70px; }
+body.selectProgram .sidebarDivider { padding:15px 0 15px 245px }
+body.selectProgram .sb .column.last p { margin-left:0; font-size:11px; }
+body.selectProgram .callout .grid2col .callout { *padding-bottom:0; }
+body.selectProgram .callout { *padding-bottom:1.6em; }
+
+body.accountinfo #main #content #bartmap.steps6 ul li#bartmap1 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif) !important; }
+body.accountinfo #main #content #bartmap.steps5 ul li#bartmap1, body.accountinfo #main #content #bartmap.steps5 ul li#bartmap1, body.accountinfo #main #content #bartmap.steps5 ul li#bartmap2 { font-weight:bold; color:#333; background-image:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif ); }
+body.accountinfo #main #content #bartmap.steps4 .progress { width:0; }
+body.accountinfo #main #content #bartmap.steps5 .progress { width:180px; margin-left:80px;}
+body.accountinfo #main #content #inhousebartmap.steps6 .progress { width: 0;}
+body.accountinfo #main #content #bartmap.steps6 .progress { width:80px; }
+
+body.accountinfo #main #content h1 { margin-bottom:15px !important; font-size:24px !important; }
+body.accountinfo #main #content form h2 { font-size:14px; }
+body.accountinfo #main #content img.right { margin:0 !important; }
+body.accountinfo #main #content input#agree { float:left; margin-bottom:12px; }
+body.accountinfo #main #content .grid2cola { margin:2em 0; padding-top:25px;}
+body.accountinfo #main #content .grid2cola .column.last p { color:#333; }
+body.accountinfo #main #content .grid2cola .column.email { width:46%; margin:2em 4em 0 0 !important; }
+body.accountinfo #main #content .grid2cola.section #apple_id { padding:30px 0; }
+body.accountinfo #main #content .grid2cola.section #apple_id p { margin-left:65px; padding-top:1px; }
+body.accountinfo #main #content .grid2col .column { width:50%; margin-left:0px !important; }
+body.accountinfo #main #content .grid3col { width:80%; }
+body.accountinfo #main #content .grid3col .column.first,
+body.accountinfo #main #content .grid3col p { clear:both; margin-bottom:0; }
+body.accountinfo #main #content .grid1colVertical ul, 
+body.accountinfo #main #content .grid3col ul { margin-bottom:3em; }
+body.accountinfo #main #content .grid3col .column.first input.text { width:145px; }
+body.accountinfo #main #content .grid2col h3 { clear:both; width:100%; margin-bottom:1em; font-size:14px; }
+body.accountinfo #main #content .grid3col h3 { clear:both; width:100%; margin-bottom:1em; font-size:14px; }
+body.accountinfo #main #content .grid3col .input { width:158px; }
+body.accountinfo #main #content form ul li { margin-bottom:1em; }
+body.accountinfo #main #content .grid3col .column.first { clear:both; width:100%; zoom:1; }
+body.accountinfo #main #content .grid3col .column.first ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+body.accountinfo #main #content .grid3col .column.first ul li { display:block; width:29% !important; float:left; padding-left:25px; }
+body.accountinfo #main #content .grid3col .column.first ul li input { margin-left:-25px; }
+body.accountinfo #main #content .grid3col .column.first ul.no-bottom { margin-bottom:1.2em; }
+
+body.accountinfo #main #content .grid2col h3 label {width:100%; float:none;}
+body.accountinfo #main #content .grid2col .column.first { clear:both; width:60%; zoom:1; }
+body.accountinfo #main #content .grid2col .column.first ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+body.accountinfo #main #content .grid2col .column.first ul li { display:block; width:39% !important; float:left; padding-left:25px; }
+body.accountinfo #main #content .grid2col .column.first ul li input { margin-left:-25px; }
+body.accountinfo #main #content .grid2col .column.first ul.no-bottom { margin-bottom:1.2em; }
+
+body.accountinfo #main #content .grid1colVertical .column.first ul li { display:block; width:auto; float:none !important; }
+body.accountinfo #main #content .grid3col label,
+body.accountinfo #main #content .grid1colVertical label { display:inline !important; float:none !important; width:auto !important; clear:none; }
+body.accountinfo #main #content .grid1colVertical h3 { clear:both; width:100%; margin-bottom:1em; font-size:14px; }
+body.accountinfo #main #content .message h3 { font-size:11px; color:#333; line-height:1.5em; }
+body.accountinfo #main #content .section { padding-bottom:0; margin-bottom:3em; padding-top:15px; }
+body.accountinfo #main #content .grid2cola.section { padding-bottom:30px; margin-bottom:2em; }
+body.accountinfo #main #content .nav { padding-top:28px; }
+body.accountinfo #main #content { padding:25px 40px 50px; }
+body.accountinfo #main #content .other_label { width:23px; }
+
+#professionalProfile #main #content #bartmap.steps5 ul li#bartmap1, #professionalProfile #main #content #bartmap.steps5 ul li#bartmap2, #professionalProfile #main #content #bartmap.steps5 ul li#bartmap3 { font-weight:bold; color:#333; background-image:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif ); }
+#professionalProfile #main #content #bartmap.steps5 .progress { width:350px; }
+#professionalProfile #main #content .grid1colVertical.studentStatus { margin-top:-20px; *margin-top:-5px; float:left; position:relative; }
+#professionalProfile #main #content .grid1colVertical .column.first { float:none; }
+#professionalProfile #main #content input { *margin-top:-3px; } /* ie7 fix */
+#professionalProfile #main #content .grid3col, #professionalProfile #main #content .grid2col { *padding-bottom:3em; } /* ie7 fix */
+#professionalProfile #main #content .grid3col ul, #professionalProfile #main #content .grid2col ul { *margin-bottom:0; } /* ie7 fix */
+#professionalProfile #main #content .reveal-mobile, #professionalProfile #main #content .reveal-web, #professionalProfile #main #content .reveal-mac  { clear:both; }
+
+body.ind_or_comp #main #content #bartmap.steps6 ul li#bartmap1 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif) !important; }
+body.ind_or_comp #main #content #bartmap.steps4 ul li#bartmap1,
+body.ind_or_comp #main #content #bartmap.steps4 ul li#bartmap2 { font-weight:bold; color:#333; background-image:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif ); }
+body.ind_or_comp #main #content #bartmap.steps4 .progress { width:137px; }
+body.ind_or_comp #main #content #bartmap.steps6 .progress { width:0px; }
+body.ind_or_comp #container #main h1 { margin:60px 0px; }
+body.ind_or_comp #container #main .grid2cola .column { width:49%; padding-bottom:20px;}
+body.ind_or_comp #container #main .grid2cola .column.first { border-right:1px solid #ccc; width:457px;}
+body.ind_or_comp #container #main .grid2cola .column.last { width:400px; margin-left:30px; } 
+body.ind_or_comp #container #main .grid2cola .column p { width:335px; }
+body.ind_or_comp #container #main .grid2cola .column p.closer { margin-bottom:7px; }
+body.ind_or_comp #container #main .grid2cola .column .inner-container { height:510px; }
+body.ind_or_comp #container #main .grid2cola .column .inner-container h2 { margin-bottom:5px; }
+body.ind_or_comp #container #main .grid2cola .column .inner-container h3,
+body.ind_or_comp #container #main .grid2cola .column .inner-container p,
+body.ind_or_comp #container #main .grid2cola .column .inner-container ul { font-size:11px; }
+body.ind_or_comp #container #main .grid2cola .column .inner-container ul { width:350px; }
+body.ind_or_comp #container #main .grid2cola .column .inner-container li { list-style-type:disc; margin-left:15px; margin-top:7px;}
+body.ind_or_comp #container #main .grid2cola .column .inner-container .title-space  { height:100px; }
+body.ind_or_comp #container #main .grid2cola .column .inner-container .title-space img { margin-top:-10px; }
+body.ind_or_comp #container #main .grid2cola .column.last .inner-container .title-space .left p { width:300px; }
+body.ind_or_comp #container #main .grid2cola .column.last .inner-container .title-space img { margin-top:-10px; }
+
+body.ind_or_comp #container #main .grid2cola .column .inner-container { height:679px; }
+body.ind_or_comp #container #main span.aside { display:block; color:#666; font-size:11px; }
+body.ind_or_comp #container #main span.aside + span.aside { margin-top:10px; margin-bottom:20px; }
+
+body.emailverification #main #content #bartmap.steps5 ul li#bartmap1,
+body.emailverification #main #content #bartmap.steps5 ul li#bartmap2,
+body.emailverification #main #content #bartmap.steps5 ul li#bartmap3,
+body.emailverification #main #content #bartmap.steps5 ul li#bartmap4,
+body.emailverification #main #content #bartmap.steps5 ul li#bartmap5{ font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.emailverification #main #content #bartmap.steps5 .progress { width:685px; margin-left:90px; }
+body.emailverification #main #content #bartmap.steps6 ul li#bartmap1 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.emailverification #main #content #bartmap.steps6 .progress { width:80px; }
+body.emailverification #main #content h1 { margin-bottom:0 !important; }
+body.emailverification #main #content p { margin-bottom:2em; }
+body.emailverification #main #content p.headertext { font-size:12px; font-weight:bold; }
+body.emailverification #main #content p.address { width:460px; color:#666; }
+body.emailverification #main #content img.left { margin:0 8px 0 0 !important; }
+body.emailverification #main #content input.newEmailAddress { width:280px; }
+body.emailverification #main #content .grid2col { margin:3em 0 5em; }
+body.emailverification #main #content .grid2col .column.first { width:50%; }
+body.emailverification #main #content .grid2col .column.last { width:46%; }
+body.emailverification #main #content .grid2col .sidebox .sb { padding:2em 20px 3em 28px; margin-top:-6px !important;}
+body.emailverification #main #content .grid2col .sidebox .sb div { padding:12px 0;}
+body.emailverification #main #content .grid2col .sidebox .sb p { padding:0; width:327px; }
+body.emailverification #main #content .grid2col .sidebox .sb input#activate { width:220px; margin-top:1px !important; }
+body.emailverification #main #content .grid2col .sidebox .sb a { margin-left:0; }
+body.emailverification #main #content .grid2col .column.email { margin-top:2em; }
+body.emailverification #main #content .grid2col .column.email p { margin-left:35px; }
+body.emailverification #container #main #content .grid2col .message h3 { color:#333; font-size:11px; }
+body.emailverification #container #main #content .grid2col .message p { width:344px; }
+body.emailverification #container #main #content h1 { padding:25px 0 10px; }
+body.emailverification #container #main #content .send-other { width:420px; padding-bottom:2em; margin-top:18px; }
+body.emailverification #container #main #content .send-other div p.left { padding-right:20px; padding-top:2px; }
+body.emailverification #container #main #content .send-other div input { width:240px; }
+body.emailverification #container #main #content a p.left { padding-top:7px; }
+
+body.agreement #main #content #bartmap.steps4 ul li#bartmap1,
+body.agreement #main #content #bartmap.steps4 ul li#bartmap2,
+body.agreement #main #content #bartmap.steps4 ul li#bartmap3,
+body.agreement #main #content #individualsafaribartmap.steps4 ul li#bartmap1,
+body.agreement #main #content #individualsafaribartmap.steps4 ul li#bartmap2,
+body.agreement #main #content #individualsafaribartmap.steps4 ul li#bartmap3 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.agreement #main #content #bartmap.steps4 .progress { width:275px; }
+body.agreement #main #content #inhousebartmap.steps5 .progress { width:275px; }
+body.agreement #main #content #bartmap.steps6 ul li#bartmap1 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.agreement #main #content #bartmap.steps6 .progress { width:0; }
+body.agreement #main #content input#agree { float:left; margin-bottom:12px; }
+
+#listAgreement #main #content .termsAgreement {margin-bottom: 15px; border-radius: 4px; height:85px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; border:1px solid #ebe9c5; background-color:#fdfdef;}
+#listAgreement #main #content .termsAgreement label { padding:0 20px 0 50px; width:800px; }
+#listAgreement #main #content .termsAgreement input{display:inline; position:relative; top:35px; margin-left:20px;}
+#listAgreement #main #content .termsAgreement p{ padding: 0 20px 0 50px; }
+
+body.devAgreement #main #content #bartmap.steps5 ul li#bartmap1,
+body.devAgreement #main #content #bartmap.steps5 ul li#bartmap2,
+body.devAgreement #main #content #bartmap.steps5 ul li#bartmap3,
+body.devAgreement #main #content #bartmap.steps5 ul li#bartmap4,
+body.devAgreement #main #content #bartmap.steps6 ul li#bartmap1{ font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.devAgreement #main #content #bartmap.steps5 .progress { width:510px; margin-left:90px; }
+body.devAgreement #main #content .termsAgreement { margin-bottom: 2em; padding:15px 0 22px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; border:1px solid #ebe9c5; background-color:#fdfdef;}
+body.devAgreement #main #content .termsAgreement input{ float:left; margin:13px 0 0px 20px; }
+body.devAgreement #main #content .termsAgreement p{ float:left; width:790px; padding: 0 20px 0 12px; margin-bottom:0; }
+body.devAgreement #main #content .terms { margin-bottom:2em; }
+body.devAgreement #main #content .nav { padding-top:2em; }
+body.devAgreement #main #content { padding-bottom:30px; }
+
+#selectprogram #main #content input { margin:40px 6px 0 20px;}
+#selectprogram #main #content .grid2colf { position:relative; height:110px; margin:30px 20px 10px 30px; }
+#selectprogram #main #content .grid2colf img.right { margin-right:80px; }
+#selectprogram #main #content .grid2colf .column.first { width:10%; }
+#selectprogram #main #content .grid2colf h2 { margin-bottom:0; padding-top:10px;}
+#selectprogram #main #content .grid2colf .column.last { width:90%; height:100px;}
+#selectprogram #main #content .msg.warning {color:#990000; font-weight:bold; padding:1em 1em 1em 30px; top:-50px; margin-left:-2px; border:none; background:url(https://devimages.apple.com.edgekey.net/assets/elements/icons/16x16/alert_warning.png) no-repeat 0 10px; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+#selectprogram #main #content .msg.info {color:#000; font-weight:bold; padding:1em 1em 1em 30px; top:-50px; margin-left:-2px; border:none; background:url(https://devimages.apple.com.edgekey.net/assets/elements/icons/16x16/alert_info.png) no-repeat 0 13px; behavior:url(/assets/scripts/lib/iepngfix.htc); }
+
+
+body.selectprogram #main #content #migbartmap ul li#bartmap1,
+body.selectprogram #main #content #bartmap ul li#bartmap1,
+body.selectprogram #main #content #bartmap ul li#bartmap2 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.selectprogram #main #content #bartmap .progress { width:160px; }
+body.selectprogram #main #content h1 { line-height:22px !important; }
+body.selectprogram #main #content .grid3col { margin-bottom:2em; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/selectprogrambg.gif) 0 0 repeat-y; }
+body.selectprogram #main #content .grid3col .column { position:relative; width:256px; padding-bottom:1em; margin:0 46px 0 0; }
+body.selectprogram #main #content .grid3col .column p { margin:0 0 1em; font-size:11px; line-height:1.4; }
+body.selectprogram #main #content .grid3col .column.first { clear:both; }
+body.selectprogram #main #content .grid3col .column.last { width:259px; margin-right:0; border-right:none; }
+body.selectprogram #main #content .grid3col .column h2 { margin-bottom:0 !important; }
+body.selectprogram #main #content .grid3col .column h2 span { font-weight:normal; }
+body.selectprogram #main #content .grid3col .column h3.price { margin-bottom:1em; }
+body.selectprogram #main #content .grid3col .column h3.price span { display:block; font-weight:normal; }
+body.selectprogram #main #content .grid3col .column a.button { width:86px; }
+body.selectprogram #main #content .grid3col .column a.button span { padding:3px 26px 6px; }
+body.selectprogram #main #content .grid3col .column.thumb img { float:left; display:block; margin:3px 10px 15px 0; }
+body.selectprogram #main #content .grid3col .column.thumb p { margin-left:38px; }
+body.selectprogram #main #content .section h1 { margin-bottom:0 !important; font-weight:bold !important; }
+body.selectprogram #main #content .section h1 span { font-weight:normal; }
+body.selectprogram #main #content .section .grid2colc { margin-top:1em; }
+body.selectprogram #main #content .section .grid2colc .column.last { float:left !important; width:33%; }
+body.selectprogram #main #content .section .grid2colc img.left { margin-right:8px; }
+body.selectprogram #main #content .section .grid2colc p { font-size:11px; }
+body.selectprogram #main #content .message { margin-bottom:4em; }
+body.selectprogram #main #content p.note { font-size:12px; font-weight:bold; margin:0 0 1em 0; }
+body.selectprogram #main #content ul.square { margin:0 0 3em 38px !important; }
+body.selectprogram #main #content ul.square li { margin-bottom:1em; }
+body.selectprogram #main #content .grid3col .column input { margin:0 !important; vertical-align:middle !important; }
+
+body.companyinfo #main #content p.important { font-weight:bold; margin-bottom:0;  }
+body.companyinfo #main #content #edubartmap ul li#bartmap1,
+body.companyinfo #main #content #inhousebartmap ul li#bartmap1,
+body.companyinfo #main #content #migbartmap ul li#bartmap1,
+body.companyinfo #main #content #migbartmap ul li#bartmap2,
+body.companyinfo #main #content #bartmap ul li#bartmap1,
+body.companyinfo #main #content #individualsafaribartmap ul li#bartmap1{ font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.companyinfo #main #content #edubartmap .progress { width:0; }
+body.companyinfo #main #content #migbartmap .progress { width:120px; }
+body.companyinfo #main #content #bartmap .progress { width:80px; }
+body.companyinfo #main #content .grid2cola { margin-top:2em; }
+body.companyinfo #main #content .grid2cola .checkbox input,
+body.companyinfo #main #content .grid2cola .radio input { float:left; margin:2px 12px 35px 0; }
+body.companyinfo #main #content .grid2cola .radio,
+body.companyinfo #main #content .grid2cola .column.first h2  { font-size:14px; font-weight:600; color:#000; }
+body.companyinfo #main #content .grid2cola .underline { padding-bottom:25px; margin-right:20px; border-bottom:1px solid #ccc; }
+body.companyinfo #main #content .grid2cola .column.first div.radio-container,
+body.companyinfo #main #content .grid2cola .column.first div.input.multiple input,
+body.companyinfo #main #content .grid2cola .column.first div.input span.error,
+body.companyinfo #main #content .grid2cola .column.first div.input span.forminfo { margin-left:142px; }
+body.companyinfo #main #content .grid2cola .column.first div.input span.forminfo span { margin-left:0; display:inline-block; margin-right:6px; }
+body.companyinfo #main #content .grid2cola .column.first div.radio-container { margin-top:4px; }
+
+body.companyinfo #main #content .grid2cola .column.first div.input input.countrycode { width:80px !important; }
+body.companyinfo #main #content .grid2cola .column.first div.input input.phonenumber { width:90px !important; }
+body.companyinfo #main #content .grid2cola .column.first div.input input.ext { width:44px !important; }
+
+body.companyinfo #main #content .grid2cola .column.first div.input span.countrycode { width:83px; }
+body.companyinfo #main #content .grid2cola .column.first div.input span.phonenumber { width:94px; }
+body.companyinfo #main #content .grid2cola .column.first div.input span.ext { width:48px; }
+
+body.companyinfo #main #content .grid2cola .column.first div.input.multiple input.first { margin-left:0; }
+body.companyinfo #main #content .grid2cola .column.first label { width:142px; font-weight:bold; color:#000; }
+body.companyinfo #main #content .grid2cola .column.first label span { display:inline; margin-left:0; margin-right:10px; font-weight:normal; color:#666; float:right; }
+body.companyinfo #main #content .grid2cola .column.first label span.optional { float:left; }
+body.companyinfo #main #content .grid2cola .column.last { font-size:11px; line-height:1.4; }
+body.companyinfo #main #content .grid2cola .column.last img.left { margin:0 5px 35px 0; }
+body.companyinfo #main #content .grid2cola .message { margin-bottom:30px; }
+body.companyinfo #main #content .grid2cola.standardcompany .column.first label { margin-left:26px; width:100px; }
+body.companyinfo #main #content .grid2cola.standardcompany .column.first div.input span.forminfo { margin-left:127px; }
+
+body.companyinfo #govAddressSection { margin-top:-43px !important }
+body.companyinfo #govAddressSection .input.multiple label { position:absolute; }
+body.companyinfo #govAddressSection .input.multiple input#address1 { margin-top:0 !important; }
+
+body.reviewsubmit #main #content #edubartmap ul li#bartmap1,
+body.reviewsubmit #main #content #edubartmap ul li#bartmap2,
+body.reviewsubmit #main #content #migbartmap ul li#bartmap1,
+body.reviewsubmit #main #content #migbartmap ul li#bartmap2,
+body.reviewsubmit #main #content #migbartmap ul li#bartmap3,
+body.reviewsubmit #main #content #inhousebartmap ul li#bartmap1,
+body.reviewsubmit #main #content #inhousebartmap ul li#bartmap2,
+body.reviewsubmit #main #content #bartmap ul li#bartmap1,
+body.reviewsubmit #main #content #bartmap ul li#bartmap2,
+body.reviewsubmit #main #content #bartmap ul li#bartmap3,
+body.reviewsubmit #main #content #individualsafaribartmap ul li#bartmap1,
+body.reviewsubmit #main #content #individualsafaribartmap ul li#bartmap2 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.reviewsubmit #main #content #edubartmap .progress { width:130px; }
+body.reviewsubmit #main #content #migbartmap .progress { width:245px; }
+body.reviewsubmit #main #content #individualsafaribartmap .progress { width:130px; }
+body.reviewsubmit #main #content #bartmap .progress { width:304px; }
+body.reviewsubmit #main #content #inhousebartmap .progress { width:150px; }
+body.reviewsubmit #main #content img.left { margin: 1px 54px 16px -20px; }
+body.reviewsubmit #main #content .section:after, 
+body.reviewsubmit #main #content .lastsection:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+body.reviewsubmit #main #content .section h2 { margin-bottom:0; }
+body.reviewsubmit #main #content .firstsection { margin-top:3em; padding-bottom:0; }
+body.reviewsubmit #main #content .lastsection { padding-bottom:2em; }
+body.reviewsubmit #main #content .programInfoList { float:left; width:100%; margin:-15px 0 15px 167px; }
+body.reviewsubmit #main #content .programInfoList h3 { margin-top: 6px; }
+body.reviewsubmit #main #content h4 { clear:both; width:150px; float:left; margin-right:20px; font-size:13px; }
+body.reviewsubmit #main #content h4 span { display:block; font-size:11px; color:#999; font-weight:normal; }
+body.reviewsubmit #main #content p { float:left; width:400px; margin:0 0 0 120px; }
+body.reviewsubmit #main #content dl { float:left; width:370px; margin-right:20px; }
+body.reviewsubmit #main #content div.programtype { float:left; width:296px; font-size:14px; font-weight:bold; color:#000; }
+body.reviewsubmit #main #content div.appleid { float:left; width:296px; font-weight:bold; color:#000; }
+body.reviewsubmit #main #content dl dt { clear:left; float:left; width:120px; font-size:11px; text-align:right; color:#666; }
+body.reviewsubmit #main #content dl dd { float:left; width:220px; font-size:11px; margin-left:20px; }
+body.reviewsubmit #main #content .message { float:left; width:270px; margin-left:50px;}
+body.reviewsubmit #main #content .message h3 { font-size:11px; }
+body.reviewsubmit #main #content .message p { margin-left:0; margin-bottom:20px; width:270px; }
+
+body.submitconfirmed #main #content #edubartmap ul li#bartmap1,
+body.submitconfirmed #main #content #edubartmap ul li#bartmap2,
+body.submitconfirmed #main #content #inhousebartmap ul li#bartmap1,
+body.submitconfirmed #main #content #inhousebartmap ul li#bartmap2,
+body.submitconfirmed #main #content #migbartmap ul li#bartmap1,
+body.submitconfirmed #main #content #migbartmap ul li#bartmap2,
+body.submitconfirmed #main #content #migbartmap ul li#bartmap3,
+body.submitconfirmed #main #content #migbartmap ul li#bartmap4,
+body.submitconfirmed #main #content #bartmap ul li#bartmap1,
+body.submitconfirmed #main #content #bartmap ul li#bartmap2,
+body.submitconfirmed #main #content #bartmap ul li#bartmap3,
+body.submitconfirmed #main #content #individualsafaribartmap ul li#bartmap1,
+body.submitconfirmed #main #content #individualsafaribartmap ul li#bartmap2,
+body.submitconfirmed #main #content #individualsafaribartmap ul li#bartmap3,
+body.submitconfirmed #main #content #individualsafaribartmap ul li#bartmap6 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.submitconfirmed #main #content #edubartmap .progress { width:130px; }
+body.submitconfirmed #main #content #inhousebartmap .progress { width:150px; }
+body.submitconfirmed #main #content #migbartmap .progress { width:360px; }
+body.submitconfirmed #main #content #bartmap .progress { width:384px; }
+body.submitconfirmed #main #content #individualsafaribartmap .progress { width:400px; }
+body.submitconfirmed #main #content h1 { margin-bottom:10px !important; }
+body.submitconfirmed #main #content .section p.headertext { margin-bottom:2em; }
+body.submitconfirmed #main #content h2 span { font-weight:normal; }
+body.submitconfirmed #main #content h3 { margin-bottom:1em; }
+body.submitconfirmed #main #content dl { width:500px; }
+body.submitconfirmed #main #content dl dt { clear:both; float:left; margin-bottom:0.5em; width:120px; color:#666; }
+body.submitconfirmed #main #content dl dd { float:left; width:380px; margin-bottom:0.5em; color:#000; }
+body.submitconfirmed #main #content ol { margin-left:21px; }
+body.submitconfirmed #main #content ol li { margin-bottom:1em; }
+body.submitconfirmed.regcomplete #main #content .grid2colf { margin-top:80px; }
+body.submitconfirmed.regcomplete #main #content .grid2colf .column.first {width:10%; }
+body.submitconfirmed.regcomplete #main #content .grid2colf .column.last {width:90%; }
+body.submitconfirmed.regcomplete #main #content h1 { font-weight:normal; }
+body.submitconfirmed.regcomplete #main #content p { font-size:14px; margin-right:50px; }
+body.submitconfirmed.regcomplete #main #hero { border-bottom:1px solid #ccc; margin-bottom:40px; padding:25px 0 5px; }
+body.submitconfirmed.regcomplete #main #content div.center { padding-left:80px; width:740px; padding-bottom:192px; }
+body.submitconfirmed.regcomplete #main #content #bartmap ul li#bartmap4,
+body.submitconfirmed.regcomplete #main #content #bartmap ul li#bartmap5,
+body.submitconfirmed.regcomplete #main #content #bartmap ul li#bartmap6 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.submitconfirmed.regcomplete #main #content #bartmap .progress { width:690px; margin-left:90px; }
+body.submitconfirmed.regcomplete #main #content.progressempty #bartmap ul li#bartmap1 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.png); }
+body.submitconfirmed.regcomplete #main #content.progressempty #bartmap .progress { width:0; }
+body.submitconfirmed.regcomplete #main #content.progressempty #bartmap ul li#bartmap4,
+body.submitconfirmed.regcomplete #main #content.progressempty #bartmap ul li#bartmap5,
+body.submitconfirmed.regcomplete #main #content.progressempty #bartmap ul li#bartmap6,
+body.submitconfirmed.regcomplete #main #content.progressempty #bartmap ul li#bartmap2,
+body.submitconfirmed.regcomplete #main #content.progressempty #bartmap ul li#bartmap3 { font-weight:normal; color:#999; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_columnbg.gif); }
+body.submitconfirmed #main #content ol ul li { margin-top: 5px; padding-left: 27px; background: url(https://devimages.apple.com.edgekey.net/assets/elements/icons/20x20/reference.png) top left no-repeat; }
+body.submitconfirmed #main #content ol ul h4 { font-size: 12px; }
+
+
+body.agreetolicense #main #content #renewbartmap ul li#bartmap1,
+body.agreetolicense #main #content #renewbartmap ul li#bartmap2,
+body.agreetolicense #main #content #edubartmap ul li#bartmap1,
+body.agreetolicense #main #content #edubartmap ul li#bartmap2,
+body.agreetolicense #main #content #edubartmap ul li#bartmap3,
+body.agreetolicense #main #content #edubartmap ul li#bartmap4,
+body.agreetolicense #main #content #inhousebartmap ul li#bartmap1,
+body.agreetolicense #main #content #inhousebartmap ul li#bartmap2,
+body.agreetolicense #main #content #inhousebartmap ul li#bartmap3,
+body.agreetolicense #main #content #inhousebartmap ul li#bartmap4,
+body.agreetolicense #main #content #migbartmap ul li#bartmap1,
+body.agreetolicense #main #content #migbartmap ul li#bartmap2,
+body.agreetolicense #main #content #migbartmap ul li#bartmap3,
+body.agreetolicense #main #content #migbartmap ul li#bartmap4,
+body.agreetolicense #main #content #migbartmap ul li#bartmap5,
+body.agreetolicense #main #content #bartmap ul li#bartmap1,
+body.agreetolicense #main #content #bartmap ul li#bartmap2,
+body.agreetolicense #main #content #bartmap ul li#bartmap3, 
+body.agreetolicense #main #content #bartmap ul li#bartmap4,
+body.agreetolicense #main #content #individualsafaribartmap ul li#bartmap1,
+body.agreetolicense #main #content #individualsafaribartmap ul li#bartmap2,
+body.agreetolicense #main #content #individualsafaribartmap ul li#bartmap3 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.agreetolicense #main #content #renewbartmap .progress { width:194px; }
+body.agreetolicense #main #content #edubartmap .progress { width:400px; }
+body.agreetolicense #main #content #migbartmap .progress { width:485px; }
+body.agreetolicense #main #content #inhousebartmap .progress { width:450px; }
+body.agreetolicense #main #content #individualsafaribartmap.steps4 .progress { width:265px; }
+body.agreetolicense #main #content #bartmap .progress { width:450px; }
+body.agreetolicense #main #content select.selectlanguage { float:right; width:205px; margin:-5px 0 0.5em; }
+body.agreetolicense #main #content #listAgreementForm {border-top: 1px solid #ccc; padding-top:40px;}
+body.agreetolicense #main #content h2 { margin-bottom:10px;}
+body.agreetolicense #main #content span.pt11 { float:left; font-weight:bold; margin-bottom:10px; }
+body.agreetolicense #main #content p { padding-left:26px; }
+body.agreetolicense #main #content .terms { clear:both; margin-bottom:30px;}
+body.agreetolicense #main #content .terms p { padding-left:0; }
+body.agreetolicense #main #content #agree { float:left; margin:2px 0 0 0; }
+
+body.purchasecountryno #main #content #renewbartmap ul li#bartmap1,
+body.purchasecountryno #main #content #renewbartmap ul li#bartmap2,
+body.purchasecountryno #main #content #inhousebartmap ul li#bartmap1,
+body.purchasecountryno #main #content #inhousebartmap ul li#bartmap2,
+body.purchasecountryno #main #content #inhousebartmap ul li#bartmap3,
+body.purchasecountryno #main #content #inhousebartmap ul li#bartmap4,
+body.purchasecountryno #main #content #inhousebartmap ul li#bartmap5,
+body.purchasecountryno #main #content #bartmap ul li#bartmap1,
+body.purchasecountryno #main #content #bartmap ul li#bartmap2,
+body.purchasecountryno #main #content #bartmap ul li#bartmap3,
+body.purchasecountryno #main #content #bartmap ul li#bartmap4,
+body.purchasecountryno #main #content #bartmap ul li#bartmap5 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.purchasecountryno #main #content #bartmap .progress { width:600px; }
+body.purchasecountryno #main #content #inhousebartmap .progress { width:600px; }
+body.purchasecountryno #main #content #renewbartmap .progress { width:258px; }
+body.purchasecountryno #main #content h1 { margin:1em 0 0 !important; }
+body.purchasecountryno #main #content img.warning { float:left; margin:0 12px; }
+body.purchasecountryno #main #content .grid2col { margin:4em 0 !important; }
+body.purchasecountryno #main #content .grid2col p { font-size:11px; line-height:1.4; }
+body.purchasecountryno #main #content .grid2col .sidebox .sb { padding:2em 3em !important; background:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/purchasecountryno_sideboxbg.gif) bottom repeat-x; }
+body.purchasecountryno #main #content .grid2col .sidebox .sb img.left { margin-top:0.5em; }
+body.purchasecountryno #main #content .grid2col .sidebox .sb p { clear:none; margin-left:55px; padding:0; }
+body.purchasecountryno #main #content .grid2col .sidebox .sb p.sosumi { clear:both; margin:0; }
+body.purchasecountryno #main #content .grid2col h2 { font-size:14px; }
+body.purchasecountryno #main #content .grid2col dl { margin:0; line-height:22px; }
+body.purchasecountryno #main #content .grid2col dt { clear:both; float:left; width:120px; font-weight:bold; }
+body.purchasecountryno #main #content .grid2col dd { float:left; width:240px; }
+body.purchasecountryno #main #content .grid3col img { margin:0 8px 60px 0; }
+body.purchasecountryno #main #content .grid3col p { font-size:11px; line-height:1.4; }
+
+body.purchaseprogram #main #content #renewbartmap ul li#bartmap1,
+body.purchaseprogram #main #content #renewbartmap ul li#bartmap2,
+body.purchaseprogram #main #content #bartmap ul li#bartmap1,
+body.purchaseprogram #main #content #bartmap ul li#bartmap2,
+body.purchaseprogram #main #content #bartmap ul li#bartmap3,
+body.purchaseprogram #main #content #bartmap ul li#bartmap4,
+body.purchaseprogram #main #content #inhousebartmap ul li#bartmap1,
+body.purchaseprogram #main #content #inhousebartmap ul li#bartmap2,
+body.purchaseprogram #main #content #inhousebartmap ul li#bartmap3,
+body.purchaseprogram #main #content #inhousebartmap ul li#bartmap4,
+body.purchaseprogram #main #content #inhousebartmap ul li#bartmap5,
+body.purchaseprogram #main #content #bartmap ul li#bartmap5 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.purchaseprogram #main #content #bartmap .progress { width:600px; }
+body.purchaseprogram #main #content #inhousebartmap .progress { width:600px; }
+body.purchaseprogram #main #content #renewbartmap .progress { width:194px; }
+body.purchaseprogram #main #content h1 { margin-bottom:1em !important; }
+body.purchaseprogram #main #content p.headertext { margin:-6px 0 3em; }
+body.purchaseprogram #main #content p.headertext img { float:left; margin:-6px 12px 0 0; }
+body.purchaseprogram #main #content .sidebox { padding-top:1em !important; }
+body.purchaseprogram #main #content .programInfoList { clear:both; }
+body.purchaseprogram #main #content .programInfoList h3 { margin-top: 6px; }
+
+body.purchaseprogram #main #content .sidebox p { clear:none; padding:0; margin-bottom:1em !important; }
+body.purchaseprogram #main #content .sidebox a.button { display:inline; position:relative; top:53px; left:250px; }
+body.purchaseprogram #main #content .sidebox img.left { clear:left; padding:0 30px 0 10px; }
+body.purchaseprogram #main #content .sidebarDivider { width: 394px; float:left; margin:20px -20px 0; background:url( https://devimages.apple.com.edgekey.net/assets/elements/registration/images/purchaseprogram_sidebarbg.png ) repeat-x;}
+body.purchaseprogram #main #content .sidebarDivider p { padding:20px 140px 10px 20px; }
+body.purchaseprogram #main #content .column.last p { margin-left:68px; font-size:12px; line-height:1.5; }
+body.purchaseprogram #main #content .sb .column.last p { margin-left:0; }
+body.purchaseprogram #main #content #multipleLang { clear:left; margin-top:10px;}
+body.purchaseprogram #main #content #multipleLang h3 { margin-bottom:15px; }
+body.purchaseprogram #main #content #multipleLang p { margin:6px 0 0 55px; padding-bottom:6px; font-size:12px;}
+body.purchaseprogram #main #content #multipleLang a.button { top:-5px; left:-70px; clear:both; float:right;}
+body.purchaseprogram.tsi #main #content .sidebox a.button { left:115px; top:50px; }
+body.purchaseprogram.tsi #main #content .sidebarDivider { margin:0 -20px; }
+
+body.activateprogram #main #content #renewbartmap ul li#bartmap1,
+body.activateprogram #main #content #renewbartmap ul li#bartmap2,
+body.activateprogram #main #content #renewbartmap ul li#bartmap3,
+body.activateprogram #main #content #edubartmap ul li#bartmap1,
+body.activateprogram #main #content #edubartmap ul li#bartmap2,
+body.activateprogram #main #content #edubartmap ul li#bartmap3,
+body.activateprogram #main #content #edubartmap ul li#bartmap4,
+body.activateprogram #main #content #inhousebartmap ul li#bartmap1,
+body.activateprogram #main #content #inhousebartmap ul li#bartmap2,
+body.activateprogram #main #content #inhousebartmap ul li#bartmap3,
+body.activateprogram #main #content #inhousebartmap ul li#bartmap4,
+body.activateprogram #main #content #inhousebartmap ul li#bartmap5,
+body.activateprogram #main #content #inhousebartmap ul li#bartmap6,
+body.activateprogram #main #content #bartmap ul li#bartmap1,
+body.activateprogram #main #content #bartmap ul li#bartmap2,
+body.activateprogram #main #content #bartmap ul li#bartmap3,
+body.activateprogram #main #content #bartmap ul li#bartmap4,
+body.activateprogram #main #content #bartmap ul li#bartmap5,
+body.activateprogram #main #content #bartmap ul li#bartmap6,
+body.activateprogram #main #content #individualsafaribartmap ul li#bartmap1,
+body.activateprogram #main #content #individualsafaribartmap ul li#bartmap2,
+body.activateprogram #main #content #individualsafaribartmap ul li#bartmap3,
+body.activateprogram #main #content #individualsafaribartmap ul li#bartmap6 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.activateprogram #main #content #edubartmap .progress { width:400px; }
+body.activateprogram #main #content #renewbartmap .progress { width:395px; }
+body.activateprogram #main #content #individualsafaribartmap .progress { width:395px; }
+body.activateprogram #main #content #inhousebartmap .progress { width:750px;}
+body.activateprogram #main #content #bartmap .progress { width:760px; }
+body.activateprogram #main #content h1 { margin-bottom:0 !important; }
+body.activateprogram #main #content p.headertext { margin-bottom:2em; }
+body.activateprogram #main #content .sidebox .sb { padding-bottom:3em; }
+body.activateprogram #main #content .sidebox p { padding:0; }
+body.activateprogram #main #content .column.last { width:320px; padding-left:117px; }
+body.activateprogram #main #content .column.last img.left { margin:4px 0 0 -40px; }
+body.activateprogram #main #content .column.last p { margin-bottom:4em; font-size:11px; line-height:1.4; }
+body.activateprogram #main #content ul li span.errorMessage { position:relative; display:block; clear:both; margin:1em 0; padding:1em 1em 1em 55px; vertical-align:middle; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; border:1px solid #ddd; background:#f3f3f3 url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/icon_alertStop.png) no-repeat 10px 10px; behavior:url(/assets/scripts/lib/iepngfix.htc); font-size:16px; }
+#review #main #content #bartmap .progress { width:750px; }
+
+body.emailvertification .newEmailAddress { width: 150px;}
+
+body.welcomerid #main #content h1 { margin:1em 0 0 !important; font-weight:normal; font-size:24px !important; }
+body.welcomerid #main #content p.headertext { color:#666; font-size:19px; line-height:1.2; }
+body.welcomerid #main #content .grid2col { clear:both; margin-top:4em; }
+body.welcomerid #main #content .grid2col h2 { margin-bottom:0; }
+body.welcomerid #main #content .grid2col .column img { float:left; margin:2px 15px 0 0; }
+body.welcomerid #main #content .grid2col .column { margin-bottom:1em; width:45%; }
+body.welcomerid #main #content .grid2col .column.first { clear:both; }
+body.welcomerid #main #content .grid2col .column.first p { margin-left:78px; }
+body.welcomerid #main #content .grid2col .column.last p { margin-left:59px; }
+
+body.welcome #main #content h1 { margin:1em 0 0 !important; font-weight:normal; font-size:24px !important; }
+body.welcome #main #content p.headertext { color:#666; font-size:19px; line-height:1.2; }
+body.welcome #main #content img.right { float:right; margin-right:-50px; }
+body.welcome #main #content .grid2col { clear:both; margin-top:4em; }
+body.welcome #main #content .grid2col .column img { float:left; margin:2px 15px 0 0; }
+body.welcome #main #content .grid2col .column { margin-bottom:3em; }
+body.welcome #main #content .grid2col .column.first { clear:both; }
+body.welcome #main #content .grid2col .column p { margin-left:122px; }
+
+/* iDP renewal */
+body.startrenew  div.button.blue,
+body.welcomerenew div.button.blue { background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_blue_right.png); }
+body.startrenew div.button.blue input,
+body.welcomerenew div.button.blue input { color:#fff; text-shadow:#324e69 -1px -1px 0; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/buttons/button_blue_left.png); }
+
+body.startrenew #main #content .section { margin-bottom:3em; }
+
+body.startrenew #main #content h1,
+body.welcomerenew #main #content h1 { margin:1em 0 0 !important; }
+body.startrenew #main #content p.headertext { color:#666; font-size:14px; margin-bottom:0; }
+
+body.welcomerenew #main #content { padding-bottom:3em; }
+body.welcomerenew #main #content p.headertext { color:#666; font-size:14px; margin-bottom:3em; }
+body.welcomerenew #main #content dl { width:100%; font-size:12px; margin-bottom:3em; zoom:1; }
+body.welcomerenew #main #content dl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+body.welcomerenew #main #content dl dt { clear:both; float:left; margin-bottom:1em; width:200px; text-align:left; color:#666; }
+body.welcomerenew #main #content dl dd { float:left; width:680px; margin-bottom:1em; color:#000; }
+body.welcomerenew #main #content dl dd span { display:block; font-size:11px; color:#666; }
+body.welcomerenew #main #content hr { clear:both; font-size:1; height:1px; border-top:1px solid #ccc; margin-bottom:1.6em; zoom:1; }
+
+
+body.renew #main #content #renewbartmap ul li#bartmap1,
+body.renew #main #content #renewbartmap ul li#bartmap2,
+body.renew #main #content #renewbartmap ul li#bartmap3,
+body.renew #main #content #edubartmap ul li#bartmap1,
+body.renew #main #content #edubartmap ul li#bartmap2,
+body.renew #main #content #edubartmap ul li#bartmap3,
+body.renew #main #content #edubartmap ul li#bartmap4,
+body.renew #main #content #bartmap ul li#bartmap1,
+body.renew #main #content #bartmap ul li#bartmap2,
+body.renew #main #content #bartmap ul li#bartmap3,
+body.renew #main #content #bartmap ul li#bartmap4,
+body.renew #main #content #bartmap ul li#bartmap5,
+body.renew #main #content #bartmap ul li#bartmap6 { font-weight:bold; color:#333; background-image:url(https://devimages.apple.com.edgekey.net/assets/elements/registration/images/progress_activebg.gif); }
+body.renew #main #content h1 { margin-bottom:0 !important; }
+body.renew #main #content h2.bordered { padding-bottom:0.5em !important; }
+body.renew #main #content dl { width:100%; font-size:12px; zoom:1; padding-top:30px;}
+body.renew #main #content dl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+body.renew #main #content dl.nameInfo dt, body.renew #main #content dl.nameInfo dd { border-top: 1px solid #ccc; }
+body.renew #main #content dl dt.programGroup, body.renew #main #content dl dd.programGroup { border-top: none; display:block; position:relative; top:-80px; padding:0; margin:0; }
+body.renew #main #content dl.nameInfo img {margin-right:180px;}
+body.renew #main #content dl dt { clear:both; float:left; width:200px; text-align:left; color:#666; padding: 20px 0;}
+body.renew #main #content dl dd { float:left; width:680px; color:#000; padding: 20px 0; }
+body.renew #main #content dl dd span { display:block; font-size:11px; color:#666; }
+body.renew #main #content p.note { clear:both; padding-left:36px; margin:0 8px 18px; font-weight:normal !important; font-size:12px; color:#A60202 !important; }
+
+#acceptInvitation #main label { margin-top:4px; font-weight:bold; }
+#acceptInvitation #main input { margin-top:4px; }
+#acceptInvitation .msg.error { border:none; background:none; padding:0 1em 0 0;}
+
+
+/* Apple Developer Registration */
+.adr #main { margin:0 auto; background:none; width:980px !important; }
+.adr #globalheader h1 a { top:-2px; }
+
+body.devAgreement.adr #main #content { padding-top:0; padding-bottom:0; }
+body.devAgreement.adr #main #content .hero { display:block; margin:0 auto 18px; }
+body.devAgreement.adr #main #content h1 { text-align:center; }
+body.devAgreement.adr #main #content .topbar h1 { text-align:left; }
+body.devAgreement.adr #main #content p.intro { text-align:center; margin-top:10px; margin-bottom:50px; padding:0 40px; }
+body.devAgreement.adr #main #content .container { padding:45px 45px 25px; margin-bottom:40px;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#efefef));
+	background-image:-moz-linear-gradient(center top, #fff 0%, #efefef 100%);
+	background-image:-o-linear-gradient(#fff, #efefef);
+	background:-ms-linear-gradient(top, #fff 0%, #efefef 100%);
+	background-image:linear-gradient(to bottom, #fff 0%, #efefef 100%);
+	-webkit-box-shadow:rgba(0,0,0,0.35) 0px 1px 4px;
+	-moz-box-shadow:rgba(0,0,0,0.35) 0 1px 4px;
+	-o-box-shadow:rgba(0,0,0,0.35) 0 1px 4px;
+	box-shadow:rgba(0,0,0,0.35) 0 1px 4px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px; 
+}
+body.devAgreement.adr #main #content .container h2 { margin-bottom:3px; color:#333; }
+body.devAgreement.adr #main #content .container p { width:575px; font-size:14px; }
+body.devAgreement.adr #main #content .container .divider { margin:40px 0 30px; position:relative; z-index:1; border-top:2px solid #e8e8e8; border-bottom:1px solid #fff; }
+body.devAgreement.adr #main #content .container .divider p { padding:0 15px; width:auto; position:absolute; top:-13px; left:390px; display:block; background-color:#f7f7f7; text-align:center; color:#cacaca; }
+body.devAgreement.adr #main #content .container .button { display:block; width:150px; padding:7px 0; color:#fff; text-shadow:1px -1px 1px #2263a9;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#53abea), to(#2e75cd));
+	background-image:-moz-linear-gradient(center top, #53abea 0%, #2e75cd 100%);
+	background-image:-o-linear-gradient(#53abea, #2e75cd);
+	background:-ms-linear-gradient(top, #53abea 0%, #2e75cd 100%);
+	background-image:linear-gradient(to bottom, #53abea 0%, #2e75cd 100%);
+	-webkit-box-shadow: rgba(0,0,0,0.35) 0 1px 3px;
+	-moz-box-shadow: rgba(0,0,0,0.35) 0 1px 3px;
+	box-shadow: rgba(0,0,0,0.35) 0 1px 3px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-khtml-border-radius: 4px;
+}
+body.devAgreement.adr #main #content .container .button:hover { 
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#53abea), to(#0061b6));
+	background-image:-moz-linear-gradient(center top, #53abea 0%, #0061b6 100%);
+	background-image:-o-linear-gradient(#53abea, #0061b6);
+	background:-ms-linear-gradient(top, #53abea 0%, #0061b6 100%);
+	background-image:linear-gradient(to bottom, #53abea 0%, #0061b6 100%);
+}
+body.devAgreement.adr #main #content .container .button:active { 
+	-webkit-box-shadow:inset rgba(0,0,0,0.4) 0 2px 3px;
+	-moz-box-shadow:inset rgba(0,0,0,0.4) 0 2px 3px;
+	box-shadow:inset rgba(0,0,0,0.4) 0 2px 3px;
+}
+body.devAgreement.adr #main #content .footer { position:relative; z-index:3; margin:0 -40px; padding:12px 0 14px; border-top:1px solid #dadada; text-align:center;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#e6e6e6));
+	background-image:-moz-linear-gradient(center top, #f4f4f4 0%, #e6e6e6 100%);
+	background-image:-o-linear-gradient(#f4f4f4, #e6e6e6);
+	background:-ms-linear-gradient(top, #f4f4f4 0%, #e6e6e6 100%);
+	background-image:linear-gradient(to bottom, #f4f4f4 0%, #e6e6e6 100%);
+	-webkit-box-shadow:inset rgba(0,0,0,0.12) 0px 2px 8px;
+	-moz-box-shadow:inset rgba(0,0,0,0.12) 0 2px 8px;
+	-o-box-shadow:inset rgba(0,0,0,0.12) 0 2px 8px;
+	box-shadow:inset rgba(0,0,0,0.12) 0 2px 8px;
+	-webkit-border-bottom-left-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	-moz-border-radius: 0 0 3px 3px;
+	-o-border-radius: 0 0 3px 3px;
+	-khtml-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+body.devAgreement.adr #main #content .footer a { font-size:14px; color:#08c; }
+
+body.devAgreement.thanks #main #content { padding:0 65px 12px; }
+body.devAgreement.thanks #main #content .topbar { margin:0 -65px 40px; }
+body.devAgreement.thanks #main #content h1 { margin-bottom:30px; }
+body.devAgreement.thanks #main #content .horizontal_divider { display:block; margin:0 auto 25px; }
+body.devAgreement.thanks #main #content p { margin-bottom:10px; font-size:14px; }
+body.devAgreement.thanks #main #content p.name span { margin-right:47px; }
+body.devAgreement.thanks #main #content p.email { margin-bottom:20px; }
+body.devAgreement.thanks #main #content p.email span { margin-right:50px; }
+body.devAgreement.thanks #main #content p.info { margin-bottom:25px; }
+body.devAgreement.thanks #main #content .nav a.button span { margin-right:-5px; margin-left:0; padding-left:25px; }
+body.devAgreement.thanks #main #content .nav .button { float:none; display:block; width:150px; margin:0 auto; font-weight:normal; }
+body.devAgreement.thanks #main #content .nav a.button.large span { background-image:url(https://devimages.apple.com.edgekey.net/assets/core/elements/buttons/button_sprite_large.png); }
+
+#listAgreement.adr #content { padding:0 60px 35px; }
+#listAgreement.adr #content h1 { margin-bottom:30px; }
+#listAgreement.adr #content .topbar { margin:0 -60px; margin-bottom:35px; }
+#listAgreement.adr #content .pdf { float:right; padding:3px 0 8px 25px; font-size:12px; background:url(https://devimages.apple.com.edgekey.net/assets/elements/icons/20x20/pdf.png) no-repeat 0 0; }
+#listAgreement.adr #content .horizontal_divider { display:block; margin:0 auto 30px; }
+#listAgreement.adr #content .scrollable { height:180px; margin:25px auto; padding:10px 20px; overflow:auto; border:1px solid #ccc; color:#666; }
+#listAgreement.adr #content .scrollable strong { color:#666; }
+#listAgreement.adr #content form label { display:block; width:auto; padding:15px 20px 20px; margin-bottom:30px; background-color:#fcfee9; border:1px solid #eeefd0; font-size:12px; color:#000;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-khtml-border-radius:4px;
+	border-radius:4px; 
+}
+#listAgreement.adr #content form label p { margin-bottom:0; }
+#listAgreement.adr #content form label input { float:left; margin:13px 15px 10px 0; }
+#listAgreement.adr #content .nav { padding-top:30px; }
+#listAgreement.adr #content .nav a.button { width:150px; border:none; }
+#listAgreement.adr #content .nav .left a.button { margin-left:270px; }
+#listAgreement.adr #content .nav .right a.button { margin-right:270px; }
+#listAgreement.adr #content .nav a.button.large { background:url(https://devimages.apple.com.edgekey.net/assets/core/elements/buttons/button_sprite_large_left.png) left -2px no-repeat; }
+#listAgreement.adr #content .nav a.button.large input { margin:0; padding-left:25px; background:url(https://devimages.apple.com.edgekey.net/assets/core/elements/buttons/button_sprite_large.png) right -2px; }
+#listAgreement.adr #content .nav a.button.large:hover { background-position:left -209px; color:#525252; cursor:pointer; }
+#listAgreement.adr #content .nav a.button.large:active { background-position:left -279px; color:#525252; }
+#listAgreement.adr #content .nav a.button.large.blue input { background-position:right -36px; }
+#listAgreement.adr #content .nav a.button.large.blue.disabled { color:#98C3E8; }
+#listAgreement.adr #content .nav a.button.large.blue:hover { background-position:left -174px; }
+#listAgreement.adr #content .nav a.button.large.blue:hover input { background-position:right -174px; }
+#listAgreement.adr #content .nav a.button.large.blue:active { background-position:left -244px; }
+#listAgreement.adr #content .nav a.button.large.blue:active input { background-position:right -242px; }
+
+body.accountinfo.adr #main #content .sectionContent { margin:0; padding:35px 60px; }
+body.accountinfo.adr #main #content .sectionContent hr { margin-top:30px !important; margin-top:30px !important; }
+body.accountinfo.adr #main #content .sectionContent .grid3col { margin-bottom:15px; }
+body.accountinfo.adr #main #content .sectionContent input[type="text"] { width:300px !important; height:18px; border-top:2px solid #aaa; }
+body.accountinfo.adr #main #content .nav a.button { border:none; }
+body.accountinfo.adr #main #content .nav a.button span { margin-right:-5px; }
+body.accountinfo.adr #main #content .sectionContent .nav .left a.button { margin-left:275px; }
+body.accountinfo.adr #main #content .sectionContent .nav .right a.button { margin-right:275px; }
+
