@@ -21,7 +21,7 @@ div.center {
 }
 </style>
 </head>
-<body onload="onLoad()">
+<body>
 	<div data-role="page" id="main">
 	</div>
 	<div data-role="page" id="no_connection">
@@ -34,12 +34,10 @@ div.center {
 	</div>
 	<script src="js/jquery-2.0.3.min.js"></script>
 	<script src="js/jquery.mobile-1.4.0-beta.1.min.js"></script>
-	<script src="phonegap.js"></script>
+	<script src="corodva.js"></script>
 	<script>
-	 function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
-		
+		document.addEventListener("deviceready", onDeviceReady, false);
+
 		function onDeviceReady() {
 			tryConnect();
 		}
